@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage{url}
+
 \begin{document}
 
 \emph{Annabel Lee}\\
@@ -6,5 +8,43 @@ It was many and many a year ago.\\[2mm]
 In a kingdom by sea,\\
 That a maiden there lived whom you may know\\
 By the name of Annabel Lee
+
+% disable hyphenation and prevent line break 
+\mbox{text} 
+% \@. adjusts pull stop position 
+\TeX\ was designed by Donald\@. see it? \\
+% Adding three dots (ellipsis)
+Here are three dots... compare to ellipsis\ldots \\[2cm]
+
+\emph{Alignment}\\
+
+{\centering
+\huge\bfseries centered for a funny reason\\
+\large\normalfont caption\\
+\normalsize\today\\
+}
+
+\parbox{2cm}{\raggedright
+    Right Aligned, for a reason}
+\parbox{2cm}{\raggedleft
+    Left Aligned, for another reason}
+
+% Another way to center content
+\begin{center}
+    \emph{Annabel Lee}
+\end{center}
+\begin{center}
+    It was many and many years ago,\\
+    In a kingdom by the sea,\\
+    That a maiden there lived whom you may know\\
+    By the name of Annabel Lee
+\end{center}
+More info can be found at
+\url{http://poe.com}.
+
+%Quote
+\begin{quote}
+``Anyone who has never made a mistake has never tried anything new''
+\end{quote}
 
 \end{document}
